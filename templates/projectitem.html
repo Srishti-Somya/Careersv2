@@ -1,0 +1,18 @@
+<div class ="border-bottom row" style = "margin-bottom: 10px; padding-bottom : 8px">
+  <div class = "col-9">  
+  <h4 style = "color : rgb(130, 130, 130); margin-bottom : 1px;"> 
+      {{project['title']}}
+    </h4>
+  
+ {% if 'completed' in project %}
+  <div style = "margin-bottom : 5px;">
+    <b>Completed : {{project['completed']}}</b>
+  </div>
+</div>
+  
+  <div class = "col-3 text-center">
+    <button type="button" class="btn btn-outline-primary">View</button>
+  </div>
+  
+{% endif %}
+</div>
